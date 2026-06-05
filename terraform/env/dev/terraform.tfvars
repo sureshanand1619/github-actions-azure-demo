@@ -18,4 +18,4 @@ scale_in_cpu_threshold  = 25
 
 image_tag = "latest"
 
-vm_sku = "Standard_B2s"
+vm_sku = "Standard_D2s_v3"
