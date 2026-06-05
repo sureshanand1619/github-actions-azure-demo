@@ -92,4 +92,5 @@ module "vmss" {
   acr_username            = module.acr.acr_admin_username
   acr_password            = module.acr.acr_admin_password
   image_tag               = var.image_tag
+  vm_sku                  = var.vm_sku    # add this line
 }

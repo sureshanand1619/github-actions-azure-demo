@@ -79,3 +79,9 @@ variable "image_tag" {
   description = "Docker image tag to deploy"
   default     = "latest"
 }
+
+variable "vm_sku" {
+  type        = string
+  description = "VM SKU for VMSS instances"
+  default     = "Standard_B2s"
+}

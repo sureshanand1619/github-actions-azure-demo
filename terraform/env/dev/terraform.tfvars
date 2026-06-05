@@ -17,3 +17,5 @@ scale_out_cpu_threshold = 75
 scale_in_cpu_threshold  = 25
 
 image_tag = "latest"
+
+vm_sku = "Standard_B2s"
