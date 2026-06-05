@@ -1,0 +1,13 @@
+resource "azurerm_container_registry" "this" {
+  name                = var.acr_name
+  resource_group_name = var.resource_group_name
+  location            = var.location
+  sku                 = "Basic"
+  admin_enabled       = true
+
+  tags = {
+    environment = var.environment
+    project     = "github-actions-azure-demo"
+    managed_by  = "terraform"
+  }
+}
