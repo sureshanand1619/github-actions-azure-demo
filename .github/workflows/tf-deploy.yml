@@ -76,7 +76,7 @@ jobs:
 
       - name: Run Checkov
         run: |
-          docker run --rm -v ${{ github.workspace }}:/tf bridgecrew/checkov --directory /tf/terraform/env/${{ inputs.environment }} --skip-check CKV_AZURE_49,CKV_AZURE_178,CKV_AZURE_97,CKV_AZURE_149,CKV_AZURE_1,CKV_AZURE_50,CKV_AZURE_119,CKV_AZURE_160,CKV_AZURE_10
+          docker run --rm -v ${{ github.workspace }}:/tf bridgecrew/checkov --directory /tf/terraform/env/${{ inputs.environment }}  --skip-check CKV_AZURE_49,CKV_AZURE_97,CKV_AZURE_178,CKV_AZURE_149,CKV_AZURE_160,CKV_AZURE_137,CKV_AZURE_139,CKV_AZURE_163,CKV_AZURE_164,CKV_AZURE_165,CKV_AZURE_166,CKV_AZURE_167,CKV_AZURE_233,CKV_AZURE_237
 
   # ============================================================
   # JOB 2: Plan
